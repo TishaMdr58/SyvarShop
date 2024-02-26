@@ -18,7 +18,9 @@ function ProductPage({ setCartCount, count }) {
     setCart((prev) => [...prev, id]);
     setCartCount(count + 1);
   }
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     console.log(cart);
   }, [cart]);
@@ -55,7 +57,7 @@ function ProductPage({ setCartCount, count }) {
         {/* ))} */}
       </div>
 
-      <MostSelling setCartCount={setCartCount} count={count}  />
+      <MostSelling setCartCount={setCartCount} count={count} />
     </>
   );
 }

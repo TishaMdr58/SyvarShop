@@ -3,7 +3,7 @@ import "./MainPage.css";
 import axios from "axios";
 import ProductBox from "./ProductBox";
 import MostSelling from "./MostSelling";
-
+import bg from "../public/nobg.png";
 function MainPage({ setCartCount, count }) {
   // const [data, setData] = useState([]);
   // const [cart, setcart] = usestate(0);
@@ -34,7 +34,7 @@ function MainPage({ setCartCount, count }) {
     <>
       <div className="main-shop">
         <div className="main-display">
-          <img src="../public/nobg.png" alt="" />
+          <img src={bg} alt="" />
           <p>GET DRESSED AS YOUNG</p>
         </div>
         <MostSelling setCartCount={setCartCount} count={count} />
