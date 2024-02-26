@@ -1,0 +1,110 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 1442px; */
+  width: 100%;
+  height: 70px;
+  border-radius: 0px 0px 30px 30px;
+  background: var(--PrimaryColor, #2f7abf);
+  color: #fff;
+  gap: 10px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 40px;
+}
+
+nav li {
+  margin-right: 40px;
+  color: var(--White, #ececec);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.cartIcon .cart {
+  position: absolute;
+}
+
+.cartNumber {
+  background-color: #fff;
+  color: #000;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+nav .hamburgerMenu {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.burger {
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  position: fixed;
+  left: 7px;
+  top: 70px;
+  border-radius: 5px;
+  border: 5px solid #2f7abf;
+  /* display: none; */
+}
+
+.burger ul {
+  display: inline;
+}
+
+.burger ul li {
+  font-size: 32px;
+  margin-left: 10px;
+  color: #2f7abf;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .hamburgerMenu {
+    display: flex;
+    font-size: 32px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+    /* height: 220px; */
+  }
+
+  nav .navitems {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+    /* display: none; */
+  }
+
+  nav .navitems li,
+  nav .navitems .cartIcon {
+    width: 100%;
+    margin-left: 50px;
+    /* text-align: center; */
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-shop {
+  /* max-width: 1441px; */
+  width: 100%;
+}
+
+.main-display {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 1441px; */
+  width: 100%;
+  height: 960px;
+  background: url(<path-to-image>), rgb(67, 66, 66) 50% / cover no-repeat;
+}
+
+.main-display img {
+  max-width: 1441px;
+  width: 100%;
+  position: absolute;
+}
+
+.main-display p {
+  /* color: #fff; */
+  -webkit-text-stroke-width: 3;
+  -webkit-text-stroke: 2px white;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  color: transparent;
+}
+
+.most-selling .heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 20px;
+  /* margin-left: 40px; */
+  /* z-index: ; */
+}
+
+/* --------Displayed Image of women----------- */
+
+.displayedImage {
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-bottom: 73px;
+  margin-right: 50px;
+}
+
+.displayedImage .imageDis {
+  width: 100%;
+  height: 922;
+}

@@ -1,0 +1,36 @@
+
+.footer {
+    display: flex;
+    /* width: 1440px; */
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 26px 297px;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer .c,
+  .s1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 32px */
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .footer .c1,
+  .c2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin-bottom: 23px; */
+    margin: 10px 10px 10px 10px;
+  }
